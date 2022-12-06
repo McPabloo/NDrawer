@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.usuario.AjustesFragment"
+    android:background="@drawable/gradient_bg">
+
+    <FrameLayout
+        android:layout_width="408dp"
+        android:layout_height="624dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/vib_txt"
+                android:layout_width="356dp"
+                android:layout_height="57dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="246dp"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:text="Apagado"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/vib_txt2"
+                android:layout_width="356dp"
+                android:layout_height="57dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="442dp"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:text="Español"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/vib_txt3"
+                android:layout_width="356dp"
+                android:layout_height="57dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="551dp"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:text="Mexico"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/nb_txt"
+                android:layout_width="356dp"
+                android:layout_height="57dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="137dp"
+                android:background="@color/white"
+                android:padding="12dp"
+                android:text="Activo"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/nm_cb"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="35dp" />
+
+            <CheckBox
+                android:id="@+id/nm_cb2"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="248dp"
+                android:layout_marginEnd="31dp" />
+
+            <TextView
+                android:id="@+id/notifications_txt"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="22dp"
+                android:text="Notificaciones"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lenguage_txt"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="356dp"
+                android:text="Lenguaje"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nm_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="94dp"
+                android:text="Nuevo Mensaje"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idioma_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="404dp"
+                android:text="Idioma"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vib_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="206dp"
+                android:text="Vibración"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/region_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="515dp"
+                android:text="Región"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usage_txt"
+                android:layout_width="253dp"
+                android:layout_height="27dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="138dp"
+                android:layout_marginBottom="547dp"
+                android:text="Instrucciones de uso"
+                android:textColor="#5658BD"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
