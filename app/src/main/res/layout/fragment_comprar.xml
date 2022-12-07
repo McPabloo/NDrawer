@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFAFA"
-    android:backgroundTint="#FFFFFF"
+    android:background="#000000"
+    android:backgroundTint="#201E1E"
     tools:context=".ui.monedero.comprar">
 
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="575dp"
+        android:layout_height="619dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +20,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="648dp"
+            android:layout_height="match_parent"
             tools:layout_editor_absoluteX="162dp"
             tools:layout_editor_absoluteY="62dp">
 
@@ -124,8 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="70dp"
-                android:background="#FFFFFF"
-                android:backgroundTint="#FFFFFF"
+                android:background="#393333"
+                android:backgroundTint="#000000"
                 android:fontFamily="@font/abeezee"
                 android:text="Finalizar"
                 app:layout_constraintBottom_toBottomOf="parent"
