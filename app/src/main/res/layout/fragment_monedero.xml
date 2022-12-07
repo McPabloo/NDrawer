@@ -5,6 +5,7 @@
     android:id="@+id/layout_monedero"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
     tools:context=".ui.rutas.SlideshowFragment">
 
     <TextView
@@ -31,6 +32,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginBottom="640dp"
         android:text="Recuerda realizar tu recarga antes de acceder al autobus"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -48,9 +50,10 @@
         android:src="@drawable/ic_baseline_account_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -65,8 +68,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412" />
 
     <TextView
         android:id="@+id/textView3"
@@ -81,18 +86,21 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:layout_constraintVertical_bias="0.208" />
 
 
     <FrameLayout
         android:id="@+id/frameLayout3"
-        android:layout_width="421dp"
-        android:layout_height="384dp"
+        android:layout_width="0dp"
+        android:layout_height="366dp"
         android:layout_marginTop="320dp"
         android:background="@drawable/nav_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -135,8 +143,8 @@
             android:id="@+id/botonpagar"
             android:layout_width="208dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/nav_ja"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#07FFFFFF"
             android:text="Comprar Puntos"
             android:translationX="110sp"
             android:translationY="300sp"
@@ -146,8 +154,8 @@
             android:id="@+id/buttoncomprar"
             android:layout_width="208dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/nav_ja"
-            android:backgroundTint="#FFFFFF"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#03FFFFFF"
             android:text="Pago"
             android:translationX="110sp"
             android:translationY="240sp"
