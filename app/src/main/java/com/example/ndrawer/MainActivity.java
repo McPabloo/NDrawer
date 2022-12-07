@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.ndrawer.databinding.ActivityMainBinding;
+import com.example.ndrawer.ui.login.LoginActivity;
 import com.example.ndrawer.ui.monedero.comprar;
 import com.example.ndrawer.ui.usuario.AjustesFragment;
 import com.example.ndrawer.ui.usuario.HomeFragment;
@@ -79,31 +81,9 @@ public class MainActivity extends AppCompatActivity {
         //if (id == R.id.action_settings) {
         //  return true;
         //}
-        Fragment fragment = null;
 
-        switch(item.getItemId()){
-            case R.id.action_home:
-                fragment = new HomeFragment();
-                replaceFragment(fragment);
-                break;
-            case R.id.action_settings:
-                fragment = new AjustesFragment();
-                replaceFragment(fragment);
-                break;
-            case R.id.action_cerrar:
-
-        }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void replaceFragment(Fragment someFragment) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.setReorderingAllowed(true);
-        transaction.replace(R.id.layout_monedero, someFragment, null);
-        transaction.addToBackStack(null);
-        transaction.commit();
     }
 
 
