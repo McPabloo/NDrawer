@@ -1,5 +1,6 @@
 package com.example.ndrawer.ui.monedero;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.ndrawer.R;
 import com.example.ndrawer.databinding.FragmentMonederoBinding;
+import com.example.ndrawer.ui.PagoFActivity;
 import com.example.ndrawer.ui.rutasmostrar.Item1Fragment;
 
 public class GalleryFragment extends Fragment implements View.OnClickListener {
@@ -42,12 +44,12 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
     public void onClick(@NonNull View view) {
         Fragment fragment = null;
         switch (view.getId()) {
+            case R.id.buttoncomprar:
+                Intent intent = new Intent(getActivity(), PagoFActivity.class);
+                startActivity(intent);
+                break;
             case R.id.botonpagar:
                 fragment = new comprar();
-                replaceFragment(fragment);
-                break;
-            case R.id.buttoncomprar:
-                fragment = new PagoFragment();
                 replaceFragment(fragment);
                 break;
             default:

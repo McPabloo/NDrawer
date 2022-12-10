@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#201E1E"
+    android:background="@drawable/btn_fondo"
     tools:context=".ui.monedero.PagoFragment">
 
     <FrameLayout
@@ -23,41 +22,47 @@
             tools:layout_editor_absoluteY="62dp">
 
             <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="180dp"
+                android:id="@+id/textPago"
+                android:layout_width="159dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="120dp"
                 android:fontFamily="@font/abeezee"
-                android:text="11 Pesos"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="24sp"
-                android:textStyle="bold"
+                android:text="Clic para scanear"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/qr_button"
+                app:layout_constraintVertical_bias="0.522" />
+
+            <TextView
+                android:id="@+id/textPagos"
+                android:layout_width="159dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="220dp"
+                android:fontFamily="@font/abeezee"
+                android:text="Clic para scanear"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/qr_button"
+                app:layout_constraintVertical_bias="0.522" />
+
+            <ImageButton
+                android:id="@+id/qr_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:src="@drawable/qr"
-                app:layout_constraintBottom_toTopOf="@+id/textView9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/btnfinalizar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/side_nav_bar"
-                android:text="Finalizar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/qr" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
